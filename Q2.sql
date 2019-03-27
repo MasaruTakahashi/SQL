@@ -1,4 +1,7 @@
-CREATE DATABASE q2;
-USE q2;
-CREATE TABLE item(item_id int,item_name VARCHAR(256),Item_price int,category_id int);
+USE question;
+CREATE TABLE item(
+item_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+item_name VARCHAR(256) NOT NULL,
+Item_price int NOT NULL,
+category_id int);
 SELECT * FROM item;
